@@ -1,6 +1,6 @@
 #loopback-sandbox
 
 A repository for reproducing LoopBack community issues. See the
-[Issues Wiki][wiki-issues].
+[LoopBack Issues Wiki][wiki-issues] for more information.
 
 [wiki-issues]: https://github.com/strongloop/loopback/wiki/Issues
