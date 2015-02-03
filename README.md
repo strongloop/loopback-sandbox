@@ -11,4 +11,4 @@ times related to responding and fixing issues.
 
 See [issues][wiki-issues].
 
-wiki-issues: https://github.com/strongloop/loopback/wiki/Issues
+[wiki-issues]: https://github.com/strongloop/loopback/wiki/Issues
