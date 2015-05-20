@@ -1,4 +1,4 @@
-#loopback-sandbox
+# loopback-sandbox
 
 A repository for reproducing [LoopBack community issues][wiki-issues].
 
