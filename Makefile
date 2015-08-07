@@ -2,7 +2,7 @@
 # keeping `README.md` and `Makefile` intact.
 .PHONY: selfupdate
 selfupdate:
-	@echo 'Rebuilding the example. When asked for the application name, press <enter>'
+	@echo 'Rebuilding the repo. When asked for the app name, press <enter>'
 	@rm -rf $(CURDIR)/*
 	@slc loopback
 	@git checkout README.md Makefile
