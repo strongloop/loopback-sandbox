@@ -31,5 +31,9 @@
   "Role": {
     "dataSource": "db",
     "public": false
+  },
+  "Car": {
+    "dataSource": "db",
+    "public": true
   }
 }
