@@ -31,5 +31,13 @@
   "Role": {
     "dataSource": "db",
     "public": false
+  },
+  "item": {
+    "dataSource": "db",
+    "public": true
+  },
+  "image": {
+    "dataSource": "db",
+    "public": true
   }
 }
