@@ -7,15 +7,17 @@ var assert = require('assert');
 describe('HasMany with Polymorphic query with scope', function() {
 
   beforeEach(function(done) {
-    Item.create([
-      { name: 'item 1' },
-      { name: 'item 2' },
-      { name: 'item 3' }
-    ], function(err, items) {
-      Promise.map(items, function(item){
-        return item.images.create([{path: 1}, {path: 2}])
-      }).then(function(images){
-        done()
+    app.datasources.db.automigrate(function(){
+      Item.create([
+        { name: 'item 1' },
+        { name: 'item 2' },
+        { name: 'item 3' }
+      ], function(err, items) {
+        Promise.map(items, function(item){
+          return item.images.create([{path: 1}, {path: 2}])
+        }).then(function(images){
+          done()
+        });
       });
     });
   })
