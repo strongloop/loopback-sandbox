@@ -19,6 +19,9 @@
   "parse": {
   },
   "routes": {
+    "loopback#rest": {
+      "paths": ["${restApiRoot}"]
+    }
   },
   "files": {
   },
@@ -26,6 +29,6 @@
     "loopback#urlNotFound": {}
   },
   "final:after": {
-    "errorhandler": {}
+    "loopback#errorHandler": {}
   }
 }
