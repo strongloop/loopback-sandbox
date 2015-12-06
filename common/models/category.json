@@ -1,0 +1,23 @@
+{
+  "name": "category",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "games": {
+      "type": "hasMany",
+      "model": "game",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

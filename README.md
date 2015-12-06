@@ -1,5 +1,3 @@
-# loopback-sandbox
+# My Application
 
-A repository for reproducing [LoopBack community issues][wiki-issues].
-
-[wiki-issues]: https://github.com/strongloop/loopback/wiki/Reporting-issues
+The project is created for [issue 1859](https://github.com/strongloop/loopback/issues/1859).

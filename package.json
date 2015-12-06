@@ -1,5 +1,5 @@
 {
-  "name": "loopback-sandbox",
+  "name": "sample",
   "version": "1.0.0",
   "main": "server/server.js",
   "scripts": {
@@ -21,5 +21,5 @@
     "type": "",
     "url": ""
   },
-  "description": "loopback-sandbox"
+  "description": "sample"
 }

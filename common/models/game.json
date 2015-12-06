@@ -1,0 +1,29 @@
+{
+  "name": "game",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "mature": {
+      "type": "boolean"
+    }
+  },
+  "scopes": {
+    "mature": {"where": {"mature": true}}
+  },
+  "validations": [],
+  "relations": {
+    "category": {
+      "type": "belongsTo",
+      "model": "category",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
