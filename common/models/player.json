@@ -1,35 +1,20 @@
 {
-  "name": "game",
+  "name": "player",
   "base": "PersistedModel",
   "idInjection": true,
-  "scopes": {
-    "mature": {
-      "where": {
-        "mature": true
-      }
-    }
-  },
   "options": {
     "validateUpsert": true
   },
   "properties": {
     "name": {
       "type": "string"
-    },
-    "mature": {
-      "type": "boolean"
     }
   },
   "validations": [],
   "relations": {
-    "category": {
+    "game": {
       "type": "belongsTo",
-      "model": "category",
-      "foreignKey": ""
-    },
-    "players": {
-      "type": "hasMany",
-      "model": "player",
+      "model": "game",
       "foreignKey": ""
     }
   },

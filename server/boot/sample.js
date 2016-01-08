@@ -12,8 +12,8 @@ module.exports = function(app, done) {
         mature: 'true'
     },
     {
-    	name: 'game2',
-    	mature: 'false'
+    	  name: 'game2',
+    	  mature: 'false'
     }
     ], function(err, games) {
        if (err) console.error(err);
@@ -29,6 +29,10 @@ module.exports = function(app, done) {
        	  // endpoint 'http://localhost:3000/api/categories/1/games?filter[where][mature]=true'
        	  console.log('Result of endpoint >>>', result);
        	  done(null);
+       });
+
+       games[0].players.create({name: 'player1'}, function(err, player) {
+         console.log('Created player >>>', player);
        });
     });
   });
