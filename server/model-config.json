@@ -31,5 +31,13 @@
   "Role": {
     "dataSource": "db",
     "public": false
+  },
+  "Question": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Choice": {
+    "dataSource": "db",
+    "public": false
   }
 }
