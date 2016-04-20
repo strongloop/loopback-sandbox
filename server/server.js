@@ -21,7 +21,7 @@ app.start = function() {
 boot(app, __dirname, function(err) {
   if (err) throw err;
 
-  app.middleware('initial:before', function(req, res, next) {
+  app.middleware('initial:before', function requestDebugger(req, res, next) {
     next();
   });
 

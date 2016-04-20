@@ -7,7 +7,13 @@
   },
   "properties": {},
   "validations": [],
-  "relations": {},
+  "relations": {
+    "choices": {
+      "type": "hasMany",
+      "model": "Choice",
+      "foreignKey": "questionId"
+    }
+  },
   "acls": [],
   "methods": {}
 }
