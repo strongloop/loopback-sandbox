@@ -1,8 +1,6 @@
 var QuestionCtrl;
 
 module.exports = QuestionCtrl = function(app, ctx) {
-  this.app = app;
-  this.ctx = ctx;
   this.Question = app.models.Question;
   this.Choice = app.models.Choice;
 };
@@ -17,4 +15,3 @@ QuestionCtrl.prototype.vote = function(questionId, choiceId, cb) {
     });
   });
 };
-
