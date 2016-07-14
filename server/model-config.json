@@ -32,15 +32,18 @@
     "dataSource": "db",
     "public": false
   },
-  "category": {
+  "Message": {
+    "dataSource": null
+  },
+  "Space": {
     "dataSource": "db",
     "public": true
   },
-  "game": {
+  "Customer": {
     "dataSource": "db",
     "public": true
   },
-  "player": {
+  "SpaceCustomer": {
     "dataSource": "db",
     "public": true
   }

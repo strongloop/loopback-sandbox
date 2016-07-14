@@ -1,0 +1,24 @@
+{
+  "name": "Space",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "customers": {
+      "type": "hasMany",
+      "model": "Customer",
+      "foreignKey": "CustomerId",
+      "through": "SpaceCustomer"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

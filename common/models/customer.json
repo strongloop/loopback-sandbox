@@ -1,5 +1,5 @@
 {
-  "name": "category",
+  "name": "Customer",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
@@ -12,10 +12,11 @@
   },
   "validations": [],
   "relations": {
-    "games": {
+    "spaces": {
       "type": "hasMany",
-      "model": "game",
-      "foreignKey": ""
+      "model": "Space",
+      "foreignKey": "SpaceId",
+      "through": "SpaceCustomer"
     }
   },
   "acls": [],

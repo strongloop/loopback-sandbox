@@ -1,21 +1,23 @@
 {
-  "name": "player",
+  "name": "SpaceCustomer",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "name": {
-      "type": "string"
-    }
   },
   "validations": [],
   "relations": {
-    "game": {
+    "space": {
       "type": "belongsTo",
-      "model": "game",
-      "foreignKey": ""
+      "model": "Space",
+      "foreignKey": "SpaceId"
+    },
+    "customer": {
+      "type": "belongsTo",
+      "model": "Customer",
+      "foreignKey": "CustomerId"
     }
   },
   "acls": [],
