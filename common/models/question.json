@@ -1,0 +1,19 @@
+{
+  "name": "Question",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {},
+  "validations": [],
+  "relations": {
+    "choices": {
+      "type": "hasMany",
+      "model": "Choice",
+      "foreignKey": "questionId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
