@@ -2,5 +2,15 @@
   "db": {
     "name": "db",
     "connector": "memory"
+  },
+  "postgre": {
+    "host": "localhost",
+    "port": 5432,
+    "url": "",
+    "database": "sandbox",
+    "password": "ksj",
+    "name": "postgre",
+    "user": "ksj",
+    "connector": "postgresql"
   }
 }

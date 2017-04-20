@@ -14,22 +14,26 @@
     ]
   },
   "User": {
-    "dataSource": "db"
+    "dataSource": "postgre"
   },
   "AccessToken": {
-    "dataSource": "db",
+    "dataSource": "postgre",
     "public": false
   },
   "ACL": {
-    "dataSource": "db",
+    "dataSource": "postgre",
     "public": false
   },
   "RoleMapping": {
-    "dataSource": "db",
+    "dataSource": "postgre",
     "public": false
   },
   "Role": {
-    "dataSource": "db",
+    "dataSource": "postgre",
     "public": false
+  },
+  "Expense": {
+    "dataSource": "postgre",
+    "public": true
   }
 }
