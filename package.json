@@ -31,5 +31,6 @@
     "url": ""
   },
   "license": "UNLICENSED",
-  "description": "loopback-sandbox"
+  "description": "loopback-sandbox",
+  "author": "IBM Corp."
 }
